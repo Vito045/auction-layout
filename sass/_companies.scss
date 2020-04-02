@@ -1,0 +1,24 @@
+.companies {
+  grid-column: 1 / -1;
+  align-self: end;
+
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+  height: 6rem;
+  background-color: #fff;
+
+  &__container {
+    grid-column: center-start / center-end;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__company {
+    width: 7rem;
+    height: 3.5rem;
+    background-color: green;
+  }
+}

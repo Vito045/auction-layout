@@ -1,0 +1,93 @@
+.footer {
+    grid-column: 1 / -1;
+    align-self: end;
+
+    display: grid;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+    background-color: #2C3E50;
+    color: #fff;
+    padding: 3rem 0;
+
+    &__container {
+        grid-column: center-start / center-end;
+
+        display: grid;
+        grid-template-columns: max-content 1fr max-content;
+        justify-items: center;
+    }
+
+    &__logo {
+        width: 18rem;
+        height: 3rem;
+        background-color: #fff;
+    }
+
+    &__copy {
+        font-size: 1.1rem;
+        margin-top: 1.5rem;
+    }
+
+    &__second {
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        column-gap: 2rem;
+    }
+
+    &__menu-block {
+        display: grid;
+        grid-template-rows: min-content max-content;
+    }
+
+    &__title {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    &__items {
+        grid-row: 2 / 3;
+        display: grid;
+        // grid-template-columns: max-content max-content;
+        grid-template-rows: repeat(4, min-content);
+        // grid-auto-flow: column;
+    }
+
+    &__item {
+        font-size: 1.1rem;
+        transition: all .2s;
+
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+
+    &__phone {
+        font-size: 2.5rem;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
+    &__text {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    &__third {
+        display: grid;
+        grid-template-rows: max-content max-content 1fr;
+        justify-items: end;
+    }
+
+    &__socials {
+        display: flex;
+        font-size: 1.8rem;
+
+        &>*:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+}

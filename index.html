@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <link rel="stylesheet" href="fontawesome/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+
+    <title>nexter &mdash; your home, your freedom</title>
+</head>
+
+<body class="container">
+    <header class="header">
+        <div class="header__element header__top">
+            <div class="header__container">
+                <div class="header__logo"></div>
+                <div class="header__buttons">
+                    <button class="header__button header__signup">
+                        <i class="far fa-address-card"></i>
+                        Регистрация</button>
+                    <button class="header__button header__login">
+                        <i class="far fa-user"></i>
+                        Вход
+                    </button>
+                </div>
+                <div class="login header__popup">
+                    <h4 class="login__title">Вход</h4>
+                    <form class="login__form">
+                        <label for="email">Электронная почта:</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="password">Пароль</label>
+                        <input type="password" name="password" id="password" required>
+                        <label class="categories__label">
+                            <input type="checkbox">
+                            <span class="categories__input categories__checkbox">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            Запомнить меня
+                        </label>
+                        <button class="login__login">Войти</button>
+                        <button class="login__forgot">Забил пароль?</button>
+                    </form>
+                </div>
+                <div class="header__typography">
+                    <h4 class="header__title">
+                        <i class="fas fa-phone-alt"></i>
+                        8-800-100-97-54
+                    </h4>
+                    <span class="header__text">24 часа, звонок по россии бесплатный</span>
+                </div>
+                <ul class="header__switch">
+                    <li class="header__language header__language--selected">Ru</li>
+                    <div class="header__items">
+                        <li class="header__language">Us</li>
+                        <li class="header__language">Uk</li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="header__element header__bottom">
+            <ul class="header__menu">
+                <li class="header__item">Мои аукциони</li>
+                <li class="header__item active">все аукциони</li>
+                <li class="header__item">как это работает</li>
+                <li class="header__item">доставка</li>
+                <li class="header__item">вопросы-ответы</li>
+                <li class="header__item">бонусы</li>
+                <li class="header__item">секреты-успеха</li>
+                <li class="header__item">помощь</li>
+                <li class="header__item">мы vk</li>
+                <li class="header__item">о нас</li>
+            </ul>
+        </div>
+    </header>
+    <main class="registration">
+        <div class="page">
+            <div class="page__main">Главная</div>
+            <div class="page__divider">|</div>
+            <div class="page__page">Регистрация</div>
+        </div>
+        <section class="form">
+            <h2 class="form__title">Регистрация</h2>
+            <form class="form__form">
+                <label for="email">Электронная почта:</label>
+                <input type="email" name="email" id="email" required>
+                <label for="password">Пароль</label>
+                <input type="password" name="password" id="password" required>
+                <label for="nickname">Имя (Ник) <span class="form__gray">(не более 16 знаков)</span></label>
+                <input type="text" name="nickname" id="nickname" required>
+                <label class="categories__label">
+                    <input type="checkbox">
+                    <span class="categories__input categories__checkbox">
+                        <i class="fas fa-check"></i>
+                    </span>
+                    бла
+                </label>
+                <label class="categories__label">
+                    <input type="checkbox">
+                    <span class="categories__input categories__checkbox">
+                        <i class="fas fa-check"></i>
+                    </span>
+                    бла
+                </label>
+                <label class="categories__label">
+                    <input type="checkbox">
+                    <span class="categories__input categories__checkbox">
+                        <i class="fas fa-check"></i>
+                    </span>
+                    бла?
+                </label>
+                <label class="form__small-print">поля обязательни для заполнения</label>
+                <button class="form__continue">Продолжить</button>
+            </form>
+        </section>
+    </main>
+    <!-- <main>
+        <section class="slider">
+            <div class="slider__slides">
+                <div class="slider__slide">df</div>
+                <div class="slider__slide">af</div>
+                <div class="slider__slide">kf</div>
+            </div>
+        </section>
+        <section class="lots">
+            <div class="lots__top">
+                <h2 class="lots__title">Все аукционы</h2>
+                <div class="lots__button lots__filter"><i class="far fa-sliders-h"></i> Фильтр</div>
+                <div class="lots__bets">Осталось ставок: <span class="lots__button lots__number">20</span></div>
+                <div class="lots__button lots__buy-bets">Купить ставок</div>
+            </div>
+            <div class="lots__popup">
+                <div class="categories">
+                    <div class="categories__categories">
+                        <div class="categories__category">
+                            <div class="categories__title">Категория товара:</div>
+                            <div class="categories__item categories__all">
+                                <label class="categories__label">
+                                    <input type="checkbox" />
+                                    <span class="categories__input categories__radio"></span>
+                                    все категории
+                                </label>
+                            </div>
+                            <div class="categories__item categories__one">
+                                <label class="categories__label">
+                                    <input type="checkbox">
+                                    <span class="categories__input categories__checkbox">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    apple новинки
+                                </label>
+                            </div>
+                            <div class="categories__item categories__one">
+                                <label class="categories__label">
+                                    <input type="checkbox">
+                                    <span class="categories__input categories__checkbox">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    samsung новинки
+                                </label>
+                            </div>
+                        </div>
+                        <div class="categories__category">
+                            <div class="categories__title">Категория товара:</div>
+                            <div class="categories__item categories__all">
+                                <label class="categories__label">
+                                    <input type="checkbox" />
+                                    <span class="categories__input categories__radio"></span>
+                                    все категории
+                                </label>
+                            </div>
+                            <div class="categories__item categories__one">
+                                <label class="categories__label">
+                                    <input type="checkbox">
+                                    <span class="categories__input categories__checkbox">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    apple новинки
+                                </label>
+                            </div>
+                            <div class="categories__item categories__one">
+                                <label class="categories__label">
+                                    <input type="checkbox">
+                                    <span class="categories__input categories__checkbox">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    samsung новинки
+                                </label>
+                            </div>
+                        </div>
+                        <div class="categories__category">
+                            <div class="categories__title">Категория товара:</div>
+                            <div class="categories__item categories__all">
+                                <label class="categories__label">
+                                    <input type="checkbox" />
+                                    <span class="categories__input categories__radio"></span>
+                                    все категории
+                                </label>
+                            </div>
+                            <div class="categories__item categories__one">
+                                <label class="categories__label">
+                                    <input type="checkbox">
+                                    <span class="categories__input categories__checkbox">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    apple новинки
+                                </label>
+                            </div>
+                            <div class="categories__item categories__one">
+                                <label class="categories__label">
+                                    <input type="checkbox">
+                                    <span class="categories__input categories__checkbox">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                    samsung новинки
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categories__buttons">
+                        <button class="categories__button categories__apply">Применить</button>
+                        <button class="categories__button categories__clear">Очистить фильтр</button>
+                    </div>
+                </div>
+            </div>
+            <div class="lots__lots">
+                <div class="lots__lot">
+                    <div class="lots__image"></div>
+                    <div class="lots__details">
+                        <button class="lots__detail">Подробнее</button>
+                    </div>
+                    <div class="lots__heading">Сертификат бла бла бла</div>
+                    <div class="lots__price">626,2 руб</div>
+                    <div class="lots__time">
+                        <i class="fal fa-clock"></i>
+                        00:00:03
+                        <div class="lots__clock">
+                            <div class="lots__background"></div>
+                            <span class="lots__seconds">15</span>
+                        </div>
+                    </div>
+                    <div class="lots__name">Albertik</div>
+                    <div class="lots__buttons">
+                        <button class="lots__bet">Ставка</button>
+                        <button class="lots__full-price">
+                            <i class="fal fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="lots__lot">
+                    <div class="lots__image"></div>
+                    <div class="lots__details">
+                        <button class="lots__detail">Подробнее</button>
+                    </div>
+                    <div class="lots__heading">Сертификат бла бла бла</div>
+                    <div class="lots__price">626,2 руб</div>
+                    <div class="lots__time">
+                        <i class="far fa-clock"></i>
+                        00:00:03
+                        <div class="lots__clock">
+                            <div class="lots__background"></div>
+                            <span class="lots__seconds">15</span>
+                        </div>
+                    </div>
+                    <div class="lots__name">Albertik</div>
+                    <div class="lots__buttons">
+                        <button class="lots__bet">Ставка</button>
+                        <button class="lots__full-price">
+                            <i class="far fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="comment">
+            <div class="comment__image"></div>
+            <div class="comment__text">Долго читал бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла
+                бла
+                бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла
+                бла
+                бла бла бла бла бла бла бла бла бла </div>
+            <div class="comment__additional">
+                Женя, г. Минск, 03.10.18,
+                <span class="comment__link">читать все отзивы</span>
+            </div>
+        </section>
+        <section class="lots">
+            <div class="lots__top">
+                <h3 class="lots__title lots__title--second">Примеры завер шонних аукционов</h3>
+            </div>
+            <div class="lots__lots">
+                <div class="lots__lot lots__lot--ended">
+                    <div class="lots__image"></div>
+                    <div class="lots__details">
+                        <button class="lots__detail">Подробнее</button>
+                    </div>
+                    <div class="lots__heading">Сертификат бла бла бла</div>
+                    <div class="lots__price">626,2 руб</div>
+                    <div class="lots__time">
+                        <i class="far fa-clock"></i>
+                        00:00:03
+                        <div class="lots__clock">
+                            <div class="lots__background"></div>
+                            <span class="lots__seconds">15</span>
+                        </div>
+                    </div>
+                    <div class="lots__name">Albertik</div>
+                    <div class="lots__buttons">
+                        <button class="lots__bet">Ставка</button>
+                        <button class="lots__full-price">
+                            <i class="far fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                    <div class="lots__ended">Аукцион завершон</div>
+                </div>
+            </div>
+        </section>
+    </main> -->
+    <section class="companies">
+        <div class="companies__container">
+            <div class="companies__company"></div>
+            <div class="companies__company"></div>
+            <div class="companies__company"></div>
+            <div class="companies__company"></div>
+            <div class="companies__company"></div>
+            <div class="companies__company"></div>
+            <div class="companies__company"></div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__first">
+                <div class="footer__logo"></div>
+                <div class="footer__copy">@ 2020 AuktsionX</div>
+            </div>
+            <div class="footer__second">
+                <div class="footer__menu-block">
+                    <div class="footer__title">Bla</div>
+                    <div class="footer__items">
+                        <div class="footer__item">Bla</div>
+                        <div class="footer__item">Bla</div>
+                        <div class="footer__item">Bla</div>
+                    </div>
+                </div>
+                <div class="footer__menu-block">
+                    <div class="footer__title">Bla</div>
+                    <div class="footer__items">
+                        <div class="footer__item">Bla</div>
+                        <div class="footer__item">Bla</div>
+                        <div class="footer__item">Bla</div>
+                        <div class="footer__item">Bla</div>
+                    </div>
+                </div>
+                <div class="footer__menu-block">
+                    <div class="footer__title">Bla</div>
+                    <div class="footer__items">
+                        <div class="footer__item">Bla</div>
+                        <div class="footer__item">Bla</div>
+                        <div class="footer__item">Bla</div>
+                        <div class="footer__item">Bla</div>
+                    </div>
+                    <div class="footer__items">
+                        <div class="footer__item">Bla</div>
+                        <div class="footer__item">Bla</div>
+                        <div class="footer__item">Bla</div>
+                        <div class="footer__item">Bla</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__third">
+                <div class="footer__phone">8-800-100-97-54</div>
+                <div class="footer__text">24 часа, звонок по россии бесплатный</div>
+                <div class="footer__socials">
+                    <div class="footer__social">
+                        <i class="fab fa-vk"></i>
+                    </div>
+                    <div class="footer__social">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="footer__social">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="footer__social">
+                        <i class="fab fa-odnoklassniki"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="scroll">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+    const header = document.querySelector('header');
+    const languageSwitch = document.querySelector('.header__switch');
+    const activeLanguage = document.querySelectorAll('.header__language--selected')[0];
+    const scroll = document.querySelector('.scroll');
+    const filterButton = document.querySelector('.lots__filter');
+    const popUp = document.querySelector('.lots__popup');
+    const lotsTop = document.querySelector('.lots__top');
+    const headerLoginButton = document.querySelector('.header__login');
+    const headerPopUp = document.querySelector('.header__popup');
+    activeLanguage.innerHTML += '<i class="far fa-chevron-down"></i>';
+
+    languageSwitch.addEventListener('click', e => {
+        languageSwitch.classList.toggle('active');
+    });
+
+    window.addEventListener("load", () => { });
+
+    $('.slider__slides').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 8000,
+        arrows: false
+    });
+
+    // resize();
+    window.addEventListener('resize', resize)
+
+    function resize() {
+         document.querySelector('.slider__slides').style.width =
+            `${document.querySelector('.header__menu').offsetWidth}px`;
+
+            headerPopUp.style.top = `${headerLoginButton.getBoundingClientRect().bottom + 8}px`;
+            headerPopUp.style.left = `${headerLoginButton.getBoundingClientRect().left + headerLoginButton.getBoundingClientRect().width / 2 - headerPopUp.offsetWidth / 2}px`;
+    };
+
+    window.addEventListener('scroll', () => {
+        if (document.documentElement.scrollTop > 100) scroll.classList.add('active');
+        else scroll.classList.remove('active');
+    });
+
+    scroll.addEventListener('click', () => document.body.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    }));
+
+    document.querySelectorAll('.categories__label input').forEach((checkbox, index) =>
+        checkbox.addEventListener('change', e => {
+            const input = document.querySelectorAll('.categories__input')[index];
+            input.classList.toggle('active');
+        }
+        ));
+
+    filterButton.addEventListener('click', () => {
+        filterButton.classList.toggle('active');
+
+        if (filterButton.classList.contains('active')) popUp.style.display = 'block';
+        else popUp.style.display = 'none';
+    });
+    popUp.style.top = `${getHeight(lotsTop) - 15}px`;
+
+    function getHeight(elem) {
+        const elemStyle = window.getComputedStyle(elem);
+        return elem.offsetHeight + +elemStyle.getPropertyValue('margin-top').split('px')[0] + +elemStyle.getPropertyValue('margin-bottom').split('px')[0];
+    }
+
+
+
+    headerLoginButton.addEventListener('click', () => {
+        headerLoginButton.classList.toggle('active');
+
+        if (headerLoginButton.classList.contains('active')) headerPopUp.style.display = 'block';
+        else headerPopUp.style.display = 'none';
+    });
+
+    document.addEventListener('load', () => {
+        headerPopUp.style.top = `${headerLoginButton.getBoundingClientRect().bottom + 8}px`;
+        headerPopUp.style.left = `${headerLoginButton.getBoundingClientRect().left + headerLoginButton.getBoundingClientRect().width / 2 - headerPopUp.offsetWidth / 2}px`;
+    })
+</script>
+
+
+
+</html>
