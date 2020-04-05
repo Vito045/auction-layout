@@ -20,7 +20,7 @@
 
 <body class="container">
     <header class="header">
-        <div class="header__element header__top">
+        <div class="header__element header__top grid-center">
             <div class="header__container">
                 <div class="header__logo"></div>
                 <div class="header__buttons">
@@ -66,7 +66,7 @@
                 </ul>
             </div>
         </div>
-        <div class="header__element header__bottom">
+        <div class="header__element header__bottom grid-center">
             <ul class="header__menu">
                 <li class="header__item">Мои аукциони</li>
                 <li class="header__item active">все аукциони</li>
@@ -81,7 +81,82 @@
             </ul>
         </div>
     </header>
-    <main class="registration">
+    <div class="page">
+        <div class="page__main">Главная</div>
+        <div class="page__divider">|</div>
+        <div class="page__page">Сертификат бла бла бла</div>
+    </div>
+    <main class="lot grid-center">
+        <section class="slider">
+            <div class="slider__slides">
+                <div class="slider__slide">df</div>
+                <!-- <div class="slider__slide">af</div>
+                <div class="slider__slide">kf</div> -->
+            </div>
+            <div class="slider__arrows">
+                <div class="slider__arrow"><i class="fas fa-chevron-left"></i></div>
+                <div class="slider__arrow"><i class="fas fa-chevron-right"></i></div>
+            </div>
+        </section>
+        <section class="controller">
+            <div class="controller__top">
+                <div class="controller__user-bets">
+                    Осталось ставок:
+                    <div class="controller__user-bets-number">20</div>
+                </div>
+                <button class="controller__buy-bet">Купить ставки</button>
+            </div>
+            <div class="controller__main">
+                <div class="controller__title">Title</div>
+                <div class="controller__price">629,2 руб</div>
+                <div class="controller__time lots__time">
+                    <i class="far fa-clock"></i>
+                    00:00:03
+                    <div class="lots__clock">
+                        <div class="lots__background"></div>
+                        <span class="lots__seconds">15</span>
+                    </div>
+                </div>
+                <button class="controller__button">Сделать ставку</button>
+            </div>
+            <div class="controller__bets">
+                <div class="controller__bet">
+                    <div class="controller__bet-time">19:19:19</div>
+                    <div class="controller__bet-name">name</div>
+                    <div class="controller__bet-price">100,00 руб</div>
+                </div>
+                <div class="controller__bet">
+                    <div class="controller__bet-time">19:19:19</div>
+                    <div class="controller__bet-name">name</div>
+                    <div class="controller__bet-price">100,00 руб</div>
+                </div>
+                <div class="controller__bet">
+                    <div class="controller__bet-time">19:19:19</div>
+                    <div class="controller__bet-name">name</div>
+                    <div class="controller__bet-price">100,00 руб</div>
+                </div>
+                <div class="controller__bet">
+                    <div class="controller__bet-time">19:19:19</div>
+                    <div class="controller__bet-name">name</div>
+                    <div class="controller__bet-price">100,00 руб</div>
+                </div>
+                <div class="controller__bet">
+                    <div class="controller__bet-time">19:19:19</div>
+                    <div class="controller__bet-name">name</div>
+                    <div class="controller__bet-price">100,00 руб</div>
+                </div>
+                <div class="controller__bet">
+                    <div class="controller__bet-time">19:19:19</div>
+                    <div class="controller__bet-name">name</div>
+                    <div class="controller__bet-price">100,00 руб</div>
+                </div>
+            </div>
+            <div class="controller__auto-bet">
+                Auto bets will appear soon
+            </div>
+        </section>
+    </main>
+    <!-- <main class="registration">
         <div class="page">
             <div class="page__main">Главная</div>
             <div class="page__divider">|</div>
@@ -121,7 +196,7 @@
                 <button class="form__continue">Продолжить</button>
             </form>
         </section>
-    </main>
+    </main> -->
     <!-- <main>
         <section class="slider">
             <div class="slider__slides">
@@ -421,22 +496,22 @@
 
     window.addEventListener("load", () => { });
 
-    $('.slider__slides').slick({
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 8000,
-        arrows: false
-    });
+    // $('.slider__slides').slick({
+    //     dots: true,
+    //     autoplay: true,
+    //     autoplaySpeed: 8000,
+    //     arrows: false
+    // });
 
     // resize();
     window.addEventListener('resize', resize)
 
     function resize() {
-         document.querySelector('.slider__slides').style.width =
-            `${document.querySelector('.header__menu').offsetWidth}px`;
+        // document.querySelector('.slider__slides').style.width =
+        //     `${document.querySelector('.header__menu').offsetWidth}px`;
 
-            headerPopUp.style.top = `${headerLoginButton.getBoundingClientRect().bottom + 8}px`;
-            headerPopUp.style.left = `${headerLoginButton.getBoundingClientRect().left + headerLoginButton.getBoundingClientRect().width / 2 - headerPopUp.offsetWidth / 2}px`;
+        headerPopUp.style.top = `${headerLoginButton.getBoundingClientRect().bottom + 8}px`;
+        headerPopUp.style.left = `${headerLoginButton.getBoundingClientRect().left + headerLoginButton.getBoundingClientRect().width / 2 - headerPopUp.offsetWidth / 2}px`;
     };
 
     window.addEventListener('scroll', () => {
@@ -448,6 +523,21 @@
         behavior: "smooth",
         block: "start"
     }));
+
+    headerLoginButton.addEventListener('click', () => {
+        headerLoginButton.classList.toggle('active');
+
+        if (headerLoginButton.classList.contains('active')) headerPopUp.style.display = 'block';
+        else headerPopUp.style.display = 'none';
+
+        headerPopUp.style.top = `${headerLoginButton.getBoundingClientRect().bottom + 8}px`;
+        headerPopUp.style.left = `${headerLoginButton.getBoundingClientRect().left + headerLoginButton.getBoundingClientRect().width / 2 - headerPopUp.offsetWidth / 2}px`;
+    });
+
+    document.addEventListener('load', () => {
+        headerPopUp.style.top = `${headerLoginButton.getBoundingClientRect().bottom + 8}px`;
+        headerPopUp.style.left = `${headerLoginButton.getBoundingClientRect().left + headerLoginButton.getBoundingClientRect().width / 2 - headerPopUp.offsetWidth / 2}px`;
+    });
 
     document.querySelectorAll('.categories__label input').forEach((checkbox, index) =>
         checkbox.addEventListener('change', e => {
@@ -469,19 +559,6 @@
         return elem.offsetHeight + +elemStyle.getPropertyValue('margin-top').split('px')[0] + +elemStyle.getPropertyValue('margin-bottom').split('px')[0];
     }
 
-
-
-    headerLoginButton.addEventListener('click', () => {
-        headerLoginButton.classList.toggle('active');
-
-        if (headerLoginButton.classList.contains('active')) headerPopUp.style.display = 'block';
-        else headerPopUp.style.display = 'none';
-    });
-
-    document.addEventListener('load', () => {
-        headerPopUp.style.top = `${headerLoginButton.getBoundingClientRect().bottom + 8}px`;
-        headerPopUp.style.left = `${headerLoginButton.getBoundingClientRect().left + headerLoginButton.getBoundingClientRect().width / 2 - headerPopUp.offsetWidth / 2}px`;
-    })
 </script>
 
 

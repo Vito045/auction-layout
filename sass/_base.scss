@@ -50,11 +50,11 @@ body {
 main {
     display: grid;
     // grid-template-rows: min-content min-content 40vw repeat(3, min-content);
-    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.125rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 
     @media only screen and (max-width: $bp-large) {
         // grid-template-rows: min-content min-content 40vw repeat(3, min-content);
-        grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+        grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.125rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
     }
 
     @media only screen and (max-width: $bp-medium) {
@@ -64,14 +64,51 @@ main {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr;
+    // grid-template-columns: 1fr;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.125rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
     grid-template-rows: max-content 1fr max-content max-content;
 
     min-height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.125rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+    justify-content: center;
+}
+
+.grid-center {
+    display: grid;
+    grid-template-columns: [center-start] repeat(12, [col-start] minmax(min-content, 9.125rem) [col-end]) [center-end];
+    justify-content: center;
 }
 
 main {
     grid-column: 1 / -1;
 
     padding-bottom: 5rem;
+}
+
+.page {
+    grid-column: center-start / center-end;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 1.3rem;
+    // margin: 2rem 0 4rem;
+    margin: 2rem 0;
+
+    &>* {
+        opacity: 0.6;
+    }
+
+    &__main {
+        font-weight: 600;
+        opacity: 1;
+    }
+
+    &__divider {
+        margin: 0 0.4rem;
+    }
 }

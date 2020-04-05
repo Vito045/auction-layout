@@ -1,26 +1,4 @@
 // .registration
-.page {
-  grid-column: center-start / center-end;
-
-  display: flex;
-  align-items: center;
-
-  font-size: 1.3rem;
-  margin: 2rem 0 4rem;
-  
-  & > * {
-    opacity: 0.6;
-  }
-
-  &__main {
-    font-weight: 600;
-    opacity: 1;
-  }
-
-  &__divider {
-    margin: 0 0.4rem;
-  }
-}
 
 .form {
   grid-column: col-start 3 / col-end 6;

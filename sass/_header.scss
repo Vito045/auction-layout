@@ -3,10 +3,10 @@
 
     position: relative;
 
-    &__element {
-        display: grid;
-        grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-    }
+    // &__element {
+    //     display: grid;
+    //     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+    // }
 
     &__top {
         background-color: #498FF2;
@@ -213,8 +213,8 @@
         clip-path: polygon(50% 0, 100% 100%, 0 100%);
         position: absolute;
         left: 50%;
-        top: 0;
-        transform: translate(-50%, -100%);
+        top: -4px;
+        // transform: translate(-50%, -100%);
     }
 
     &__title {
